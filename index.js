@@ -16,14 +16,15 @@ function shakeDice() {
 function toggleButton() {
 //  var x = document.querySelector("input");
   var y = document.querySelector("button");
+  var x = document.querySelector(".button-text");
   if (y.value === "shake dice") {
     y.value = "roll dice";
-    y.innerHTML = "Roll Dice";
+    x.innerHTML = "Roll Dice";
     diceAnimation = setInterval(shakeDice, 50);
     diceAnimation;
   } else {
     y.value = "shake dice";
-    y.innerHTML = "Shake Dice";
+    x.innerHTML = "Shake Dice";
     clearInterval(diceAnimation);
   }
 }

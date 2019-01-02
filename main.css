@@ -1,11 +1,26 @@
-body {
-  text-align: center;
+html, body {
+  height: 100%;
 }
 
 img {
-  width: 75%;
+  max-height: 20vh;
 }
 
-.container-fluid {
-  padding: 5%;
+.flex-child {
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+.button-text {
+  font-size: 5vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
