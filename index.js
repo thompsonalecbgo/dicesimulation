@@ -18,6 +18,7 @@ function toggleButton() {
   if (x.value === "shake dice") {
     x.value = "roll dice";
     diceAnimation = setInterval(shakeDice, 50);
+    return diceAnimation;
   } else {
     x.value = "shake dice";
     clearInterval(diceAnimation);
